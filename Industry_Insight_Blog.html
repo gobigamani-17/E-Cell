@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Shifts Every Student Founder Should Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #05070f;
+    --navy-2: #0b1120;
+    --panel: #0e1526;
+    --rust: #a5432f;
+    --blue: #4a6fb5;
+    --blue-light: #8fa9d9;
+    --ink: #eef1f6;
+    --muted: #93a0b8;
+    --line: rgba(255,255,255,0.08);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--navy);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue-light);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background: radial-gradient(ellipse at 25% 15%, var(--navy-2) 0%, var(--navy) 55%);
+    padding: 56px 24px 72px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    max-width: 880px;
+    margin:0 auto;
+    position:relative;
+    z-index:2;
+  }
+  .brandrow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    margin-bottom:64px;
+    flex-wrap:wrap;
+  }
+  .brandrow img{display:block;}
+  .logo1{height:64px;}
+  .logo2{height:52px;}
+
+  .kicker{
+    font-family:'Inter';
+    font-size:14px;
+    letter-spacing:0.02em;
+    color:var(--blue-light);
+    margin:0 0 18px;
+  }
+  h1.headline{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:600;
+    font-size:clamp(34px, 5.4vw, 58px);
+    line-height:1.08;
+    margin:0 0 20px;
+    max-width:14ch;
+  }
+  .headline .accent{
+    color:var(--muted);
+    font-style:italic;
+    font-weight:400;
+  }
+  .subline{
+    font-size:18px;
+    color:var(--muted);
+    max-width:56ch;
+    margin:0;
+  }
+
+  /* decorative svg layer */
+  .hero svg.deco{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    opacity:0.9;
+  }
+
+  /* ---------- ARTICLE ---------- */
+  .article-wrap{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 100px;
+  }
+  .lede{
+    font-size:20px;
+    color:var(--ink);
+    font-family:'Fraunces', serif;
+    font-weight:400;
+    line-height:1.5;
+    margin: 0 0 48px;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--line);
+  }
+  .section{
+    margin-bottom:44px;
+  }
+  .section h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:24px;
+    margin:0 0 14px;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .section h2 .emoji{
+    font-size:22px;
+  }
+  .section p{
+    font-size:17px;
+    color:#d3d9e6;
+    margin:0 0 14px;
+  }
+  .section-img{
+    width:100%;
+    border-radius:8px;
+    margin: 4px 0 18px;
+    display:block;
+  }
+  .fill{
+    color: var(--blue-light);
+    border-bottom: 1px dashed rgba(143,169,217,0.55);
+    padding-bottom:1px;
+  }
+
+  .callout{
+    background: var(--panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:24px 26px;
+    font-size:16px;
+    color:var(--muted);
+    margin: 48px 0;
+  }
+  .callout strong{color:var(--ink); font-weight:600;}
+
+  .closing{
+    font-size:18px;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+  .cta{
+    font-size:17px;
+    color:var(--muted);
+    margin-top:28px;
+  }
+  .tags{
+    margin-top:36px;
+    font-size:14px;
+    color:var(--blue-light);
+    letter-spacing:0.01em;
+  }
+
+  .note{
+    max-width:680px;
+    margin: 0 auto;
+    padding: 20px 24px 0;
+    font-size:14px;
+    color: var(--muted);
+    text-align:center;
+  }
+  .note span{
+    background: rgba(165,67,47,0.15);
+    border:1px solid rgba(165,67,47,0.35);
+    padding:2px 8px;
+    border-radius:4px;
+    color:#e0a696;
+  }
+
+  footer{
+    text-align:center;
+    padding: 40px 24px 56px;
+    color: var(--muted);
+    font-size:13px;
+    border-top:1px solid var(--line);
+  }
+
+  @media (max-width:520px){
+    .hero{padding:40px 20px 56px;}
+    .brandrow{margin-bottom:44px;}
+    .article-wrap{padding:48px 20px 72px;}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <svg class="deco" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle cx="120" cy="60" r="2"/>
+      <circle cx="260" cy="110" r="1.6"/>
+      <circle cx="410" cy="50" r="2"/>
+      <circle cx="560" cy="95" r="1.6"/>
+      <circle cx="700" cy="45" r="2"/>
+      <circle cx="860" cy="80" r="1.6"/>
+      <circle cx="990" cy="55" r="2"/>
+      <circle cx="1120" cy="95" r="1.6"/>
+      <circle cx="60" cy="200" r="1.6"/>
+      <circle cx="1150" cy="230" r="1.6"/>
+      <circle cx="1080" cy="420" r="1.6"/>
+      <circle cx="1160" cy="520" r="2"/>
+      <circle cx="70" cy="470" r="1.6"/>
+      <circle cx="40" cy="580" r="1.6"/>
+    </g>
+    <!-- constellation -->
+    <g stroke="#8fa9d9" stroke-width="1" opacity="0.45" fill="none">
+      <polyline points="900,400 980,340 1060,390 1010,470 1120,440 1080,540 950,510 900,400"/>
+      <line x1="900" y1="400" x2="960" y2="480"/>
+      <line x1="1010" y1="470" x2="1120" y2="440"/>
+    </g>
+    <g fill="#8fa9d9" opacity="0.85">
+      <circle cx="900" cy="400" r="4.5"/>
+      <circle cx="980" cy="340" r="4.5"/>
+      <circle cx="1060" cy="390" r="4.5"/>
+      <circle cx="1010" cy="470" r="4.5"/>
+      <circle cx="1120" cy="440" r="4.5"/>
+      <circle cx="1080" cy="540" r="4.5"/>
+      <circle cx="950" cy="510" r="4.5"/>
+    </g>
+    <!-- rocket exhaust silhouette, bottom left -->
+    <ellipse cx="130" cy="600" rx="90" ry="18" fill="#0b1120"/>
+    <polygon points="130,505 95,595 165,595" fill="#a5432f"/>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="brandrow">
+      <img class="logo1" src="./WhatsApp Image 2026-09-08 at 10.43.07 AM (1).jpeg" alt="MCE E-Cell logo">
+      <img class="logo2" src="./WhatsApp Image 2026-09-08 at 10.43.07 AM.jpeg" alt="E-Cell IIT Bombay National Entrepreneurship Challenge 2026 logo">
+    </div>
+    <p class="kicker">Industry Insight &middot; NEC 2026 Blog Series</p>
+    <h1 class="headline">3 shifts every<br><span class="accent">student founder should watch</span></h1>
+    <p class="subline">The startup landscape doesn't stay still — and neither should your radar. Here's what's actually worth tracking right now.</p>
+  </div>
+</section>
+
+<article class="article-wrap">
+
+  <p class="lede">Ideas are everywhere. Ask any room full of people what startup they'd build, and you'll get twenty answers. What separates the founders who actually get somewhere is paying attention to where the ground is shifting — and building with it, not against it.</p>
+
+  <div class="section">
+    <h2><span class="emoji">🤖</span> AI as a co-founder, not just a tool</h2>
+    <svg class="section-img" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" rx="8" fill="#0e1526"/>
+      <circle cx="320" cy="110" r="58" fill="none" stroke="#4a6fb5" stroke-width="2" opacity="0.6"/>
+      <circle cx="320" cy="110" r="34" fill="#152036" stroke="#8fa9d9" stroke-width="2"/>
+      <circle cx="304" cy="104" r="5" fill="#8fa9d9"/>
+      <circle cx="336" cy="104" r="5" fill="#8fa9d9"/>
+      <path d="M300 124 Q320 136 340 124" stroke="#8fa9d9" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <g stroke="#4a6fb5" stroke-width="2" opacity="0.7">
+        <line x1="320" y1="52" x2="320" y2="30"/>
+        <line x1="378" y1="110" x2="410" y2="110"/>
+        <line x1="262" y1="110" x2="230" y2="110"/>
+        <line x1="365" y1="70" x2="390" y2="50"/>
+        <line x1="275" y1="70" x2="250" y2="50"/>
+      </g>
+      <g fill="#8fa9d9">
+        <circle cx="320" cy="26" r="4"/>
+        <circle cx="414" cy="110" r="4"/>
+        <circle cx="226" cy="110" r="4"/>
+        <circle cx="393" cy="47" r="4"/>
+        <circle cx="247" cy="47" r="4"/>
+      </g>
+      <text x="480" y="70" fill="#93a0b8" font-family="Inter, sans-serif" font-size="14">10x</text>
+      <text x="480" y="90" fill="#93a0b8" font-family="Inter, sans-serif" font-size="12">smaller teams,</text>
+      <text x="480" y="106" fill="#93a0b8" font-family="Inter, sans-serif" font-size="12">same output</text>
+    </svg>
+    <p>Small teams are now shipping products that used to need ten times the headcount. The advantage isn't just speed — it's that a two- or three-person founding team can now credibly compete with what used to require a full department. If you're not asking where AI can replace a hire on your roadmap, you're probably moving slower than you need to.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🎯</span> D2C brands going niche, not broad</h2>
+    <svg class="section-img" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" rx="8" fill="#0e1526"/>
+      <circle cx="230" cy="110" r="72" fill="none" stroke="#38b2ac" stroke-width="1.5" opacity="0.35"/>
+      <circle cx="230" cy="110" r="50" fill="none" stroke="#38b2ac" stroke-width="1.5" opacity="0.55"/>
+      <circle cx="230" cy="110" r="28" fill="none" stroke="#38b2ac" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="230" cy="110" r="8" fill="#38b2ac"/>
+      <g fill="#3a4258" opacity="0.5">
+        <circle cx="420" cy="55" r="5"/>
+        <circle cx="460" cy="80" r="5"/>
+        <circle cx="500" cy="50" r="5"/>
+        <circle cx="440" cy="150" r="5"/>
+        <circle cx="490" cy="170" r="5"/>
+        <circle cx="530" cy="140" r="5"/>
+        <circle cx="380" cy="150" r="5"/>
+        <circle cx="540" cy="90" r="5"/>
+      </g>
+      <circle cx="470" cy="110" r="7" fill="#38b2ac"/>
+      <text x="380" y="30" fill="#93a0b8" font-family="Inter, sans-serif" font-size="12">one obsessed customer &gt; everyone</text>
+    </svg>
+    <p>The winners in direct-to-consumer aren't trying to serve everyone anymore. They're picking one very specific customer and going deep — obsessively solving for that person rather than building something "for everyone" that resonates with no one. Niche isn't a limitation right now; it's the strategy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🎓</span> Campus-to-startup pipelines are shortening</h2>
+    <svg class="section-img" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" rx="8" fill="#0e1526"/>
+      <polygon points="150,80 210,60 270,80 210,100" fill="#4a6fb5"/>
+      <rect x="205" y="82" width="10" height="34" fill="#8fa9d9"/>
+      <circle cx="210" cy="122" r="4" fill="#8fa9d9"/>
+      <path d="M300 130 L470 60" stroke="#38b2ac" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
+      <polygon points="470,60 452,64 462,76" fill="#38b2ac"/>
+      <text x="300" y="150" fill="#93a0b8" font-family="Inter, sans-serif" font-size="12">campus</text>
+      <text x="440" y="45" fill="#93a0b8" font-family="Inter, sans-serif" font-size="12">funded founder</text>
+      <g fill="#3a4258" opacity="0.6">
+        <circle cx="330" cy="115" r="3"/>
+        <circle cx="360" cy="105" r="3"/>
+        <circle cx="390" cy="98" r="3"/>
+        <circle cx="420" cy="88" r="3"/>
+      </g>
+    </svg>
+    <p>Investors are backing student founders earlier than ever, and they're betting on speed of execution over years of credentials. The gap between "still in college" and "fundable founder" is closing fast — which means waiting until after graduation to start building is increasingly a choice, not a necessity.</p>
+  </div>
+
+  <div class="callout">
+    <strong>The takeaway:</strong> if you're building something right now, ask yourself honestly — does my idea ride these shifts, or fight against them? The direction of the wind matters as much as how hard you row.
+  </div>
+
+  <p class="closing">What trend do you think is underrated right now? Let's discuss in the comments. 👇</p>
+
+  <p class="tags">#IndustryInsights #StartupTrends #ECellMCE #NEC2026 #WeRiseByLiftingOthers</p>
+</article>
+
+<footer>
+  E-Cell MCE &nbsp;|&nbsp; Powered by E-Cell IIT Bombay's National Entrepreneurship Challenge 2026
+</footer>
+
+</body>
+</html>
